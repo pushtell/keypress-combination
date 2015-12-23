@@ -1,0 +1,58 @@
+{
+  "name": "keypress-combination",
+  "keywords": ["keypress", "combination", "keydown"],
+  "main": "lib/index.js",
+  "version": "0.0.1",
+  "description": "Keypress combination",
+  "directories": {
+    "test": "test"
+  },
+  "peerDependencies": {
+  },
+  "devDependencies": {
+    "assert": "*",
+    "co": "*",
+    "regenerator": "*",
+    "regenerator-loader": "*",
+    "babel":"^6.1.18",
+    "babel-cli":"6.2.0",
+    "babel-preset-es2015": "*",
+    "babel-preset-stage-1": "*",
+    "babel-loader": "^6.2.0",
+    "babel-plugin-add-module-exports": "^0.1.1",
+    "isparta-loader": "*",
+    "expose-loader": "*",
+    "transform-loader": "*",
+    "envify": "*",
+    "karma": "*",
+    "karma-chrome-launcher": "*",
+    "karma-firefox-launcher": "*",
+    "karma-mocha": "*",
+    "karma-sourcemap-loader": "*",
+    "karma-webpack": "*",
+    "karma-browserstack-launcher": "*",
+    "es6-promise": "*",
+    "node-uuid": "*",
+    "karma-coveralls": "*",
+    "karma-coverage": "*",
+    "mocha-babel": "*",
+    "webpack": "*",
+    "mocha": "*",
+    "webpack-dev-server": "*"
+  },
+  "scripts": {
+    "example": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --content-base example/ --config ./example/webpack.example.config.js",
+    "test": "./node_modules/karma/bin/karma start test/karma.conf.js",
+    "build": "doctoc . --github --title '<h1>Table of Contents</h1>'; ./node_modules/babel-cli/bin/babel.js --presets es2015,stage-1 --plugins add-module-exports ./src --out-dir ./lib; ./node_modules/webpack/bin/webpack.js --config webpack.standalone.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pushtell/keypress-combination.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pushtell/keypress-combination/issues"
+  },
+  "homepage": "https://github.com/pushtell/keypress-combination#readme"
+}
