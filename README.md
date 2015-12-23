@@ -28,7 +28,7 @@ Please [★ on GitHub](https://github.com/pushtell/keypress-combination)!
 - [API Reference](#api-reference)
   - [`KeypressCombinationEmitter`](#keypresscombinationemitter)
     - [`constructor`](#constructor)
-    - [`.addListener(keyCode, [ keyCode, keyCode, ...], callback)`](#addlistenerkeycode--keycode-keycode--callback)
+    - [`.addListener(keyCode, [keyCode, ...] callback)`](#addlistenerkeycode-keycode--callback)
   - [`Subscription`](#subscription)
     - [`.remove()`](#remove)
 - [Keycodes](#keycodes)
