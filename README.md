@@ -55,13 +55,21 @@ subscription.remove();
 
 ### `KeypressCombinationEmitter`
 
-Event emitter responsible for coordinating and reporting usage. Extended from [facebook/emitter](https://github.com/facebook/emitter).
+Emitter responsible for coordinating combination keypress events.
+
+#### `constructor`
+
+Create a new emitter.
+
+* **Return Type:** <KeypressCombinationEmitter>
+* **Parameters:**
+  * No parameters.
 
 #### `.addListener(keyCode, [ keyCode, keyCode, ...], callback)`
 
-Emit a win event.
+Add an event listener
 
-* **Return Type:** No return value
+* **Return Type:** <Subscription>
 * **Parameters:**
   * `keyCode` - Character keycode. See the [keycodes section](#keycodes) for more information.
     * **Required**
@@ -71,6 +79,14 @@ Emit a win event.
     * **Required**
     * **Type:** `function`
     * **Example:** `function() { console.log("Press") }`
+
+### `Subscription`
+
+#### `.remove()`
+
+* **Return Type:** No return value
+* **Parameters:**
+  * No parameters.
 
 ## Keycodes
 
