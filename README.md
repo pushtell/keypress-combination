@@ -79,7 +79,7 @@ Create a new emitter.
 * **Parameters:**
   * No parameters.
 
-#### `.addListener(keyCode, [ keyCode, keyCode, ...], callback)`
+#### `.addListener(keyCode, [keyCode, ...] callback)`
 
 Add an event listener
 
