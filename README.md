@@ -6,11 +6,10 @@
 [![Dependency Status](https://david-dm.org/pushtell/keypress-combination.svg)](https://david-dm.org/pushtell/keypress-combination)
 [![NPM Downloads](https://img.shields.io/npm/dm/keypress-combination.svg?style=flat)](https://www.npmjs.com/package/keypress-combination)
 
-Attach listeners to keypress combinations like “CTRL-1”. Lightweight and well documented.
+Attach listeners to keypress combinations like CTRL-1. Lightweight and well documented.
 
 ```js
-// CTRL Keycode: 17
-// 1 Keycode: 49
+// Keycode for CTRL is 17, keycode for 1 is 49
 emitter.addListener(17, 49, function() {
   console.log("Pressed CTRL-1");
 });
