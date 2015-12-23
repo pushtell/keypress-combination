@@ -27,7 +27,7 @@ Please [★ on GitHub](https://github.com/pushtell/keypress-combination)!
 - [Usage](#usage)
 - [API Reference](#api-reference)
   - [`KeypressCombinationEmitter`](#keypresscombinationemitter)
-    - [`constructor`](#constructor)
+    - [`constructor()`](#constructor)
     - [`.addListener(keyCode, [keyCode, ...] callback)`](#addlistenerkeycode-keycode--callback)
   - [`Subscription`](#subscription)
     - [`.remove()`](#remove)
@@ -71,7 +71,7 @@ subscription.remove();
 
 Emitter responsible for coordinating combination keypress events.
 
-#### `constructor`
+#### `constructor()`
 
 Create a new emitter.
 
