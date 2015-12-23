@@ -2,8 +2,8 @@
   "name": "keypress-combination",
   "keywords": ["keypress", "combination", "keydown"],
   "main": "lib/index.js",
-  "version": "0.9.1",
-  "description": "Attach listeners to keypress combinations like “SHIFT-1”. Lightweight and well documented.",
+  "version": "0.9.2",
+  "description": "Attach listeners to keypress combinations like CTRL-1. Lightweight and well documented.",
   "directories": {
     "test": "test"
   },
