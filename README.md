@@ -6,7 +6,7 @@
 [![Dependency Status](https://david-dm.org/pushtell/keypress-combination.svg)](https://david-dm.org/pushtell/keypress-combination)
 [![NPM Downloads](https://img.shields.io/npm/dm/keypress-combination.svg?style=flat)](https://www.npmjs.com/package/keypress-combination)
 
-See the demo at [pushtell.github.io/keypress-combination](http://pushtell.github.io/keypress-combination/).
+See the demo at [jsfiddle.net/pushtell/164prhaz](https://jsfiddle.net/pushtell/164prhaz/).
 
 Please [★ on GitHub](https://github.com/pushtell/keypress-combination)!
 
@@ -32,6 +32,8 @@ npm install keypress-combination
 
 ## Usage
 
+Try it [on JSFiddle](https://jsfiddle.net/pushtell/164prhaz/)
+
 ```js
 
 var KeypressCombinationEmitter = require("keypress-combination");
@@ -51,6 +53,24 @@ subscription.remove();
 
 ## API Reference
 
+### `KeypressCombinationEmitter`
+
+Event emitter responsible for coordinating and reporting usage. Extended from [facebook/emitter](https://github.com/facebook/emitter).
+
+#### `.addListener(keyCode, [ keyCode, keyCode, ...], callback)`
+
+Emit a win event.
+
+* **Return Type:** No return value
+* **Parameters:**
+  * `keyCode` - Character keycode. See the [keycodes section](#keycodes) for more information.
+    * **Required**
+    * **Type:** `number`
+    * **Example:** `49`
+  * `callback` - Callback function.
+    * **Required**
+    * **Type:** `function`
+    * **Example:** `function() { console.log("Press") }`
 
 ## Keycodes
 
