@@ -2,8 +2,8 @@
   "name": "keypress-combination",
   "keywords": ["keypress", "combination", "keydown"],
   "main": "lib/index.js",
-  "version": "0.0.1",
-  "description": "Keypress combination",
+  "version": "0.9.1",
+  "description": "Attach listeners to keypress combinations like “SHIFT-1”. Lightweight and well documented.",
   "directories": {
     "test": "test"
   },
@@ -11,9 +11,6 @@
   },
   "devDependencies": {
     "assert": "*",
-    "co": "*",
-    "regenerator": "*",
-    "regenerator-loader": "*",
     "babel":"^6.1.18",
     "babel-cli":"6.2.0",
     "babel-preset-es2015": "*",
@@ -31,14 +28,11 @@
     "karma-sourcemap-loader": "*",
     "karma-webpack": "*",
     "karma-browserstack-launcher": "*",
-    "es6-promise": "*",
-    "node-uuid": "*",
     "karma-coveralls": "*",
     "karma-coverage": "*",
     "mocha-babel": "*",
     "webpack": "*",
-    "mocha": "*",
-    "webpack-dev-server": "*"
+    "mocha": "*"
   },
   "scripts": {
     "example": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --content-base example/ --config ./example/webpack.example.config.js",
