@@ -73,9 +73,8 @@ Emitter responsible for coordinating combination keypress events.
 
 #### `constructor()`
 
-Create a new emitter.
+Creates a new emitter.
 
-* **Return Type:** <KeypressCombinationEmitter>
 * **Parameters:**
   * No parameters.
 
@@ -83,7 +82,7 @@ Create a new emitter.
 
 Add an event listener
 
-* **Return Type:** <Subscription>
+* **Return Type:** [&lt;Subscription&gt;](#subscription)
 * **Parameters:**
   * `keyCode` - Character keycode. See the [keycodes section](#keycodes) for more information.
     * **Required**
